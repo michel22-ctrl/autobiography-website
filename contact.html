@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Autobiography</title>
+    
+</head>
+
+<style class="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+    }
+    .header
+    {
+    min-height: 30vh;
+    width: 60;
+    background-image: linear-gradient(rgba(3, 46, 50, 0.212)), url(Images/mountain.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+    .bg
+    {
+    position: relative;
+    right: 3%;  
+    width: 5%;  
+    }
+    nav
+    {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    }
+    .nav-links
+    {
+    flex: 1;
+    text-align: right;
+    }
+    .nav-links ul li
+    {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+    .nav-links ul li a
+    {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+    .nav-links ul li::after
+    {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #efbe36;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after
+    {
+    width: 100%;
+    }
+    .text-box
+    {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1
+    {
+    font-size: 60px;
+    text-align: center;
+    padding-top: -100%;
+    position: relative;
+    color: #fff;
+    transition: 0.5s;
+    }
+    .text-box h1:hover
+    {
+    font-size: 65px;
+    text-align: center;
+        color: #ffffff;
+        text-shadow: #000000;
+    padding-top: -100%;
+    position: relative;
+    }
+
+    .contact-me
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contact-me
+    {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(23, 87, 74, 0.238);
+
+    }
+
+    .container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20%;
+    }
+    .container .contactinfo
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactinfo .box
+    {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .container .contactinfo .box .icon
+    {
+        min-width: 60px;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+        .container .contactinfo .box .text
+        {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #434343;
+            flex-direction: column;
+            font-weight: 300;
+        }
+         .container .contactinfo .box .text h3
+                {
+                    font-weight: 700;
+                    color: rgb(6, 118, 120);
+
+                }
+        .contactform
+        {
+            width: 25%;
+            padding: 30px;
+            background: #ffffff;
+        }
+                .contactform h2
+                {
+                    position: relative;
+                    margin-top: -10px;
+            font-size: 30px;
+            color: rgb(6, 118, 120);
+            font-weight: 500;
+
+                }
+                .contactform .inputbox
+                {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+        .contactform .inputbox input,
+                .contactform .inputbox textarea
+        {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333333;
+            outline: none;
+            resize: none;
+
+        }
+        .contactform .inputbox span
+        {
+            position: absolute;
+            left: 0;
+                        padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #969696;
+        }
+        .contactform .inputbox input:focus ~ span,
+        .contactform .inputbox input:valid ~ span,
+        .contactform .inputbox textarea:focus ~ span,
+        .contactform .inputbox textarea:valid ~ span
+                {
+                    color: rgb(218, 64, 64);
+                    font-size: 12px;
+                    transform: translateY(-20px);
+                }
+
+    .contactform .inputbox input[type="submit"]
+    {
+        width: 100px;
+        background:rgb(6, 118, 120);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .socialmediabg
+    {
+    background: #e6e6e6;
+    height: 400px; 
+    }
+    .socialmediabg h1
+    {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 150px 0 50px;
+    color: #555;
+    text-align: center;
+    }
+    .social-media
+    {
+    display: flex;
+    justify-content: center;
+    }
+    .social-media a
+    {
+    display: flex;
+    background: #e6e6e6;
+    height: 75px;
+    width: 75px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                 -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: 0.5s;
+    }
+    .social-media a i
+    {
+    font-size: 35px;
+    color: #777;
+    }
+    .social-media a:hover
+    {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.15),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(5px)
+    }
+
+</style>
+
+<body>
+    <section class="header" style="font-family: Arial, Helvetica, sans-serif;">
+        <nav>
+            <a href="about.html" src="Images/mountain.png" class="bg"> 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="text-box">
+               <h1>Contact Details</h1>
+            </div>
+    </section>
+<!------------Contact Details------------->
+    <section class="contact-me"style="font-family: Arial, Helvetica, sans-serif;">
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Osmeña Street, Gun-Ob, Lapu-Lapu, 6015 Cebu</p>
+                        </div>
+                
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>970-297-7822</p>
+                        </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>micheljumaoas21@gmail.com</p>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                    <input type="text" name="" required="">
+                    <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                    <input type="text" name="" required="">
+                    <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Type your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                     <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Autobiography</title>
+</head>
+
+<style class="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+    }
+    .header
+    {
+    min-height: 100vh;
+    width: 50;
+    background-image: linear-gradient(rgba(3, 46, 50, 0.212)), url(Images/mountain.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+    .logo
+    {
+    position: relative;
+    right: 3%;  
+    width: 5%;  
+    }
+    nav
+    {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    }
+    .nav-links
+    {
+    flex: 1;
+    text-align: right;
+    }
+    .nav-links ul li
+    {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+    .nav-links ul li a
+    {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+    .nav-links ul li::after
+    {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #efbe36;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after
+    {
+    width: 100%;
+    }
+    .text-box
+    {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1
+    {
+    font-size: 65px;
+    position: relative;
+    top: -15px;
+    text-align: center;
+    }
+    .description
+    {
+    font-size: 17px;
+    position: relative;
+    top:30%;
+    text-align: center;
+    }
+    .know_button
+    {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding:12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: absolute;
+    cursor:pointer;
+    text-align: center;
+    top:130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .know_button:hover
+    {
+    border:  1px solid#a87c01;
+    background: #a87c01;
+    transition: 1s;
+    }
+    .self
+    {
+    width: 25%;
+    float: left;
+    border-radius: 18px;
+    margin-top: -28%;
+    margin-left: 65%;
+    margin-bottom: 18%;
+    }
+    .name h1
+    {
+    font-size: 90px;
+    margin-left: 15%;
+    padding-top: 18%;
+    padding-bottom: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+    }
+    .name 
+    {
+    background: rgba(0, 81, 79, 0.189);
+    height: 700px; 
+    display: inline-block;
+    }
+    .socialmediabg
+    {
+    background: #e6e6e6;
+    height: 400px; 
+    }
+    .socialmediabg h1
+    {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding: 150px 0 50px;
+    color: #25252592;
+    text-align: center;
+    }
+    .social-media
+    {
+    display: flex;
+    justify-content: center;
+    }
+    .social-media a
+    {
+    display: flex;
+    background: #e6e6e6;
+    height: 75px;
+    width: 75px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                 -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: 0.5s;
+    }
+    .social-media a i
+    {
+    font-size: 35px;
+    color: #006a76;
+    }
+    .social-media a:hover
+    {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.15),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(5px);
+        
+    }
+</style>
+
+<body>
+    <section class="header" style="font-family: Arial, Helvetica, sans-serif;">
+        <nav>
+            <a href="home.html" src="Images/Website Logo.png" class="logo"> 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Autobiography Website</h1>
+    <i><p class="description">This is the story of who I am, where I came from, and where I dream to go. 
+                <br>A glimpse into my life as Michel Jumao-as.</p1></br></p></i>
+                 <a href="about.html" class="know_button">Click To Know More</a>
+        </div>
+        
+    </section>
+    <section  class="name">
+         <h1>Hi I'm Michel</h1>
+                 <img src="Images/Self.jpg" class="self">
+    </section>
+
+    <section class="socialmediabg">
+
+        <h1>FOLLOW ME ON SOCIAL MEDIA</h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com/michel.jumao.as.2024"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/lehc_21?igsh=MWpnanRwODVqYzhtNw=="><i class="fab fa-instagram"></i></a>
+            <a href="https://youtu.be/7gysAfJbOTM?si=Sr7L3wSi1IDHfn2T"><i class="fab fa-youtube"></i></a>
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>

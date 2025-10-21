@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobiography</title>
+</head>
+
+<style class="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+    }
+    .header
+    {
+    min-height: 30vh;
+    width: 60;
+    background-image: linear-gradient(rgba(3, 46, 50, 0.212)), url(Images/mountain.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+    .bg
+    {
+    position: relative;
+    right: 3%;  
+    width: 5%;  
+    }
+    nav
+    {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    }
+    .nav-links
+    {
+    flex: 1;
+    text-align: right;
+    }
+    .nav-links ul li
+    {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+    .nav-links ul li a
+    {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+    .nav-links ul li::after
+    {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #efbe36;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after
+    {
+    width: 100%;
+    }
+    .text-box
+    {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1
+    {
+    font-size: 60px;
+    text-align: center;
+    padding-top: -100%;
+    position: relative;
+    color: #fff;
+    transition: 0.5s;
+    }
+    .text-box h1:hover
+    {
+    font-size: 65px;
+    text-align: center;
+    padding-top: -100%;
+    position: relative;
+    }
+    .plain
+    {
+    height: 1500px; 
+    background: linear-gradient(55deg, #03696200 10%, #7dfdf200 51%, #00545c2c 98%);
+    }
+    .plain h1
+    {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    color: #000000df;
+    margin-left: 3%;
+    }
+    .plain h3
+    {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1%;
+    color: #000000df;
+    margin-left: 3%;
+    }
+    .plain p
+    {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.5%;
+    padding-bottom: 3%;
+    color: #000000df;
+    margin-left: 3%;
+    }
+    .llcc
+    {
+    background-image: url(Images/llccbg.png);
+    }
+    .logollcc
+    {
+    margin-top: 1.5%;
+    margin-left: 3%;
+    width: 200px;
+    }
+    .logouv
+    {
+    margin-top: 1.5%;
+    margin-left: 3%;
+    width: 200px;
+    }
+    .uv
+    {
+    background-image: url(Images/uvbg.png);
+    }
+    .logoait
+    {
+    float: none;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    width: 250px;
+    }
+    .ait
+    {
+    background-image: url(Images/aitbg.png);
+    }
+    .logoghs
+    {
+    float: none;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    width: 250px;
+    }
+    .ghs
+    {
+    background-image: url(Images/ghsbg.png);
+    }
+    .logollcces
+    {
+    float: none;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    width: 250px;
+    }
+    .llcces
+    {
+    background-image: url(Images/llccesbg.png);
+    }
+
+</style>
+
+<body class="logocanvas">
+    <section class="header" style="font-family: Arial, Helvetica, sans-serif;">
+        <nav>
+            <a href="about.html" src="Images/mountain.png" class="bg"> 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="text-box">
+               <h1>Education</h1>
+            </div>
+    </section>
+    <section class="plain">
+        <div class="llcc">
+          <img src="Images/llcc-logo.png" class="logollcc">
+          <h1>Lapu-Lapu City College</h1>
+          <h3> Bachelor of Industrial Technology Major in Computer Technology</h3>
+          <p>B. Benedicto St., Lapu-Lapu City, Cebu <br>(2025 - Present)</p>
+        </div>
+        <div class="uv">
+          <img src="Images/uvlogo.png" class="logouv">
+          <h1> University of the Visayas</h1>
+          <h3> Bachelor of Science in Architecture</h3>
+          <p>Corner D. Jakosalem & Colon St., Cebu City <br>(2022 - 2023)</p>
+        </div>
+        <div class="ait">
+          <img src="Images/aitlogo.png" class="logoait">
+          <h1> Advance Institute of Technology </h1>
+          <h3>Science, Technology, Engineering, and Mathematics</h3>
+          <p>Sangi New Road, Pajo, LLC 6015 Lapu-Lapu City <br>(2020 - 2022)</p>
+        </div>
+        <div class="ghs">
+          <img src="Images/ghslogo.png" class="logoghs">
+          <h1>Gun-ob National High School</h1>
+          <h3>High School</h3>
+          <p>A. Tumulak Street, Lapu-Lapu City <br>(2016 - 2020)</p>
+        </div>
+        <div class="llcces">
+          <img src="Images/llcceslogo.png" class="logollcces">
+          <h1>Lapu-Lapu City Central Elementary School</h1>
+          <h3>Elementary</h3>
+          <p> P. Rodriguez Street, Lapu-Lapu City <br>(2010 - 2016)</p>
+        </div>
+
+
+    </section>
+
+</body>
+</html>

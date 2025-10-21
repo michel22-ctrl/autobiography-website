@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobiography</title>
+</head>
+
+<style class="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+    }
+    .header
+    {
+    min-height: 30vh;
+    width: 60;
+    background-image: linear-gradient(rgba(3, 46, 50, 0.212)), url(Images/mountain.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+    .bg
+    {
+    position: relative;
+    right: 3%;  
+    width: 5%;  
+    }
+    nav
+    {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    }
+    .nav-links
+    {
+    flex: 1;
+    text-align: right;
+    }
+    .nav-links ul li
+    {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+    .nav-links ul li a
+    {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+    .nav-links ul li::after
+    {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #efbe36;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after
+    {
+    width: 100%;
+    }
+    .text-box
+    {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1
+    {
+    font-size: 60px;
+    text-align: center;
+    padding-top: -100%;
+    position: relative;
+    color: #fff;
+    transition: 0.5s;
+    }
+    .text-box h1:hover
+    {
+    font-size: 65px;
+    text-align: center;
+    padding-top: -100%;
+    position: relative;
+    }
+
+
+        .graphic-designer h1
+        {
+            padding-top: 4%;
+            color: #000000;
+            font-size: 70px;
+            padding-left: 32%;
+            padding-bottom: 1%;
+        }
+
+        .pic1
+        {
+            float: right;
+            width: 25%;
+            border-radius: 16px;
+            padding-top: 2%;
+            padding-right: 10%;
+            padding-bottom: 5%;
+        }
+                .pic2
+        {
+            float: left;
+            width: 25%;
+            border-radius: 16px;
+                        padding-top: 2%;
+            padding-left: 10%;
+            padding-bottom: 5%;
+        }
+
+                        .pic3
+        {
+            float: none;
+            width: 25%;
+            border-radius: 16px;
+                        padding-top: 2.5%;
+                        padding-left: 2.5%;
+            padding-bottom: 5%;
+        }
+
+        .graphic-designer
+        {
+        background: linear-gradient(55deg, #fc74d344 3%, #3f94a300 51%, #095a5e57 98%);
+        height: 1300px;
+        }
+                .graphic-designer p
+                {
+                    font-size: 20px;
+                    text-align: center;
+                }
+        .drawingpic1
+        {
+                     float: right;
+            width: 25%;
+            border-radius: 16px;
+            padding-top: 2%;
+            padding-right: 23%;
+            padding-bottom: 4%;   
+        }
+        .drawingpic2
+        {
+                        float: left;
+            width: 25%;
+            border-radius: 16px;
+                        padding-top: 2%;
+            padding-left: 23%;
+            padding-bottom: 4%;
+        }
+
+</style>
+
+<body>
+    <section class="header" style="font-family: Arial, Helvetica, sans-serif;">
+        <nav>
+            <a href="about.html" src="Images/mountain.png" class="bg"> 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="text-box">
+               <h1>Skills</h1>
+            </div>
+    </section>
+    <section>
+        <div class="graphic-designer">
+        <i><h1>&nbsp;Portrait Drawing</h1></i>
+                <p>I’m an artist who loves drawing people’s faces and showing their emotions through my art.</p>
+        <img src="Images/Drawing1.png" class="drawingpic1">
+        <img src="Images/Drawing2.png" class="drawingpic2">
+        <i><h1>Graphic Designer</h1></i>
+        <p>I’m a graphic designer, and I usually create posters for our youth events in church. Below is a sample of my work.</p>
+        <img src="Images/skills1.png" class="pic1">
+        <img src="Images/Skills2.png"class="pic2">
+        <img src="Images/skills3.jpg"class="pic3">
+        </div>
+    </section>
+
+</body>
+</html>
